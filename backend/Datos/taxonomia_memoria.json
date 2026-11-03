@@ -1,0 +1,663 @@
+{
+  "identidad_personal": {
+    "prioridad": 10,
+    "descripcion": "Información esencial sobre la identidad del usuario",
+    "patrones": [
+      "mi nombre es",
+      "me llamo",
+      "soy",
+      "mi edad es",
+      "tengo años",
+      "nací el",
+      "mi cumpleaños",
+      "mi apellido",
+      "me dicen",
+      "mi segundo nombre",
+      "mi cédula",
+      "mi documento",
+      "mi DNI"
+    ],
+    "entidades_spacy": ["PER", "PERSON"],
+    "tiempo_retencion": "permanente",
+    "ejemplos": [
+      "Mi nombre es Carlos",
+      "Tengo 28 años",
+      "Nací el 15 de marzo",
+      "Me dicen Carlitos"
+    ],
+    "importancia_base": 0.95
+  },
+  
+  "familia": {
+    "prioridad": 9,
+    "descripcion": "Información sobre familiares directos",
+    "patrones": [
+      "mi mamá",
+      "mi papá",
+      "mi hermano",
+      "mi hermana",
+      "mi hijo",
+      "mi hija",
+      "mi esposa",
+      "mi esposo",
+      "mi pareja",
+      "mi abuelo",
+      "mi abuela",
+      "mi tío",
+      "mi tía",
+      "mi primo",
+      "mi prima",
+      "mi suegro",
+      "mi suegra",
+      "mi cuñado",
+      "mi cuñada",
+      "mi sobrino",
+      "mi sobrina",
+      "mi novia",
+      "mi novio",
+      "mis hijos",
+      "mis padres",
+      "mis hermanos"
+    ],
+    "entidades_spacy": ["PER", "PERSON"],
+    "tiempo_retencion": "permanente",
+    "ejemplos": [
+      "Mi hermana se llama María",
+      "Mi papá trabaja en ingeniería",
+      "Mi esposa es doctora",
+      "Tengo 2 hijos"
+    ],
+    "importancia_base": 0.9
+  },
+  
+  "mascota": {
+    "prioridad": 8,
+    "descripcion": "Información sobre mascotas del usuario",
+    "patrones": [
+      "mi perro",
+      "mi gato",
+      "mi mascota",
+      "adopté",
+      "adoptamos",
+      "perrito",
+      "gatito",
+      "cachorro",
+      "mi loro",
+      "mi pez",
+      "mi conejo",
+      "mi hámster",
+      "mi tortuga",
+      "mi ave",
+      "mi pájaro",
+      "tengo un perro",
+      "tengo un gato",
+      "tengo una mascota"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Adopté un perro llamado Max",
+      "Mi gato tiene 3 años",
+      "Tengo un loro que habla"
+    ],
+    "importancia_base": 0.8
+  },
+  
+  "salud": {
+    "prioridad": 10,
+    "descripcion": "Información médica y de salud crítica",
+    "patrones": [
+      "alérgico a",
+      "alergia",
+      "enfermedad",
+      "medicamento",
+      "tratamiento",
+      "dolor crónico",
+      "condición médica",
+      "tomo",
+      "padezco",
+      "diabético",
+      "hipertenso",
+      "asmático",
+      "tengo diabetes",
+      "tengo hipertensión",
+      "tengo asma",
+      "soy celíaco",
+      "intolerante a",
+      "mi médico",
+      "mi doctor",
+      "mi tratamiento",
+      "mis medicinas",
+      "sufro de",
+      "me diagnosticaron",
+      "cirugía",
+      "operación",
+      "grupo sanguíneo",
+      "tipo de sangre"
+    ],
+    "tiempo_retencion": "permanente",
+    "ejemplos": [
+      "Soy alérgico al maní",
+      "Tomo medicamento para la presión",
+      "Padezco diabetes tipo 2",
+      "Mi grupo sanguíneo es O+"
+    ],
+    "importancia_base": 0.95
+  },
+  
+  "trabajo_estudio": {
+    "prioridad": 8,
+    "descripcion": "Información laboral o académica",
+    "patrones": [
+      "trabajo en",
+      "trabajo como",
+      "estudio en",
+      "mi empresa",
+      "mi universidad",
+      "mi carrera",
+      "mi jefe",
+      "mi profesor",
+      "mi oficina",
+      "mi trabajo",
+      "mis estudios",
+      "me gradué",
+      "soy ingeniero",
+      "soy doctor",
+      "soy profesor",
+      "soy estudiante",
+      "mi profesión",
+      "mi ocupación",
+      "trabajo remoto",
+      "trabajo desde casa",
+      "mi horario",
+      "mi salario"
+    ],
+    "entidades_spacy": ["ORG", "LOC"],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Trabajo en Google como ingeniero",
+      "Estudio medicina en la UNAM",
+      "Soy profesor de matemáticas",
+      "Trabajo remoto desde casa"
+    ],
+    "importancia_base": 0.85
+  },
+  
+  "ubicacion": {
+    "prioridad": 7,
+    "descripcion": "Lugares importantes para el usuario",
+    "patrones": [
+      "vivo en",
+      "mi casa está",
+      "mi dirección",
+      "mi ciudad",
+      "mi país",
+      "mi barrio",
+      "mi departamento",
+      "mi apartamento",
+      "resido en",
+      "habito en",
+      "mi residencia",
+      "mi domicilio",
+      "mi vecindario",
+      "mi zona"
+    ],
+    "entidades_spacy": ["LOC", "GPE"],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Vivo en Bogotá",
+      "Mi casa está en el centro",
+      "Resido en el barrio de Chapinero"
+    ],
+    "importancia_base": 0.8
+  },
+  
+  "preferencias": {
+    "prioridad": 6,
+    "descripcion": "Gustos y preferencias personales",
+    "patrones": [
+      "me gusta",
+      "me encanta",
+      "prefiero",
+      "mi favorito",
+      "mi favorita",
+      "odio",
+      "no me gusta",
+      "detesto",
+      "amo",
+      "disfruto",
+      "me fascina",
+      "me apasiona",
+      "soy fan de",
+      "me agrada",
+      "me desagrada",
+      "no soporto",
+      "adoro"
+    ],
+    "tiempo_retencion": "medio_plazo",
+    "ejemplos": [
+      "Me gusta el café sin azúcar",
+      "Mi película favorita es Inception",
+      "Prefiero el té al café",
+      "No soporto el picante"
+    ],
+    "importancia_base": 0.6
+  },
+  
+  "evento_futuro": {
+    "prioridad": 8,
+    "descripcion": "Eventos, citas y recordatorios futuros",
+    "patrones": [
+      "mañana",
+      "próximo",
+      "la próxima semana",
+      "el mes que viene",
+      "recordarme",
+      "tengo que",
+      "debo",
+      "mi cita",
+      "mi reunión",
+      "voy a",
+      "el lunes",
+      "el martes",
+      "el miércoles",
+      "el jueves",
+      "el viernes",
+      "el sábado",
+      "el domingo",
+      "esta semana",
+      "este mes",
+      "pasado mañana",
+      "dentro de"
+    ],
+    "entidades_spacy": ["DATE", "TIME"],
+    "tiempo_retencion": "temporal",
+    "ejemplos": [
+      "Mañana tengo cita con el doctor",
+      "Recordarme comprar leche",
+      "El lunes tengo reunión a las 3pm",
+      "Dentro de una semana viajo"
+    ],
+    "importancia_base": 0.85
+  },
+  
+  "habilidad": {
+    "prioridad": 7,
+    "descripcion": "Habilidades y conocimientos del usuario",
+    "patrones": [
+      "sé",
+      "puedo",
+      "aprendí",
+      "domino",
+      "experto en",
+      "conozco",
+      "hablo",
+      "toco",
+      "manejo",
+      "soy bueno en",
+      "tengo experiencia en",
+      "certificado en",
+      "especialista en"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Sé programar en Python",
+      "Hablo inglés y francés",
+      "Toco la guitarra desde hace 10 años",
+      "Soy experto en inteligencia artificial"
+    ],
+    "importancia_base": 0.75
+  },
+  
+  "rutina": {
+    "prioridad": 6,
+    "descripcion": "Rutinas y hábitos diarios",
+    "patrones": [
+      "todos los días",
+      "siempre",
+      "nunca",
+      "por las mañanas",
+      "cada",
+      "acostumbro",
+      "suelo",
+      "normalmente",
+      "habitualmente",
+      "regularmente",
+      "diariamente",
+      "semanalmente",
+      "mensualmente",
+      "mi rutina",
+      "mi hábito"
+    ],
+    "tiempo_retencion": "medio_plazo",
+    "ejemplos": [
+      "Todos los días hago ejercicio",
+      "Siempre desayuno café",
+      "Normalmente duermo 8 horas",
+      "Suelo leer antes de dormir"
+    ],
+    "importancia_base": 0.65
+  },
+  
+  "contacto": {
+    "prioridad": 9,
+    "descripcion": "Información de contacto",
+    "patrones": [
+      "mi teléfono",
+      "mi email",
+      "mi correo",
+      "mi número",
+      "puedes contactarme",
+      "escríbeme",
+      "mi celular",
+      "mi móvil",
+      "mi WhatsApp",
+      "mi usuario",
+      "mi cuenta",
+      "mi perfil"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Mi email es user@example.com",
+      "Mi teléfono es 555-1234",
+      "Escríbeme por WhatsApp al 123456789"
+    ],
+    "importancia_base": 0.9
+  },
+  
+  "proyecto": {
+    "prioridad": 7,
+    "descripcion": "Proyectos personales o profesionales",
+    "patrones": [
+      "estoy trabajando en",
+      "mi proyecto",
+      "estoy desarrollando",
+      "estoy creando",
+      "mi idea",
+      "estoy construyendo",
+      "estoy diseñando",
+      "mi emprendimiento",
+      "mi startup",
+      "estoy lanzando"
+    ],
+    "tiempo_retencion": "medio_plazo",
+    "ejemplos": [
+      "Estoy trabajando en una app móvil",
+      "Mi proyecto es sobre IA",
+      "Estoy lanzando mi startup de fintech"
+    ],
+    "importancia_base": 0.75
+  },
+  
+  "contexto_temporal": {
+    "prioridad": 4,
+    "descripcion": "Contexto temporal de corta duración",
+    "patrones": [
+      "hoy",
+      "ayer",
+      "esta mañana",
+      "esta tarde",
+      "esta noche",
+      "ahorita",
+      "hace un rato",
+      "hace poco",
+      "recién",
+      "justo ahora"
+    ],
+    "tiempo_retencion": "corto_plazo",
+    "ejemplos": [
+      "Hoy tuve un día difícil",
+      "Esta mañana desayuné tarde",
+      "Ayer fui al cine"
+    ],
+    "importancia_base": 0.4
+  },
+  
+  "conversacion_casual": {
+    "prioridad": 2,
+    "descripcion": "Conversación sin información relevante a largo plazo",
+    "patrones": [
+      "hola",
+      "cómo estás",
+      "qué tal",
+      "buenos días",
+      "buenas tardes",
+      "buenas noches",
+      "gracias",
+      "ok",
+      "vale",
+      "entiendo",
+      "perfecto",
+      "claro",
+      "sí",
+      "no",
+      "bien",
+      "adiós",
+      "hasta luego",
+      "nos vemos",
+      "chao",
+      "bye"
+    ],
+    "tiempo_retencion": "efimero",
+    "ejemplos": [
+      "Hola, cómo estás",
+      "Gracias por la ayuda",
+      "Ok, perfecto"
+    ],
+    "importancia_base": 0.2
+  },
+  
+  "pregunta": {
+    "prioridad": 1,
+    "descripcion": "Preguntas del usuario (no se guardan como hechos)",
+    "patrones": [
+      "qué",
+      "cómo",
+      "cuándo",
+      "dónde",
+      "por qué",
+      "quién",
+      "cuál",
+      "cuánto",
+      "cuáles",
+      "cuántos"
+    ],
+    "tiempo_retencion": "efimero",
+    "ejemplos": [
+      "¿Qué hora es?",
+      "¿Cómo se hace un pastel?",
+      "¿Dónde está mi documento?"
+    ],
+    "importancia_base": 0.1
+  },
+  
+  "logro": {
+    "prioridad": 7,
+    "descripcion": "Logros y metas alcanzadas",
+    "patrones": [
+      "logré",
+      "conseguí",
+      "alcancé",
+      "completé",
+      "terminé",
+      "gané",
+      "me gradué",
+      "obtuve",
+      "recibí",
+      "me certificaron",
+      "me premiaron",
+      "me ascendieron"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Logré mi primera maratón",
+      "Me gradué con honores",
+      "Conseguí el trabajo en Google",
+      "Obtuve mi certificación en AWS"
+    ],
+    "importancia_base": 0.8
+  },
+  
+  "meta": {
+    "prioridad": 7,
+    "descripcion": "Metas y objetivos futuros",
+    "patrones": [
+      "quiero",
+      "mi meta",
+      "mi objetivo",
+      "planeo",
+      "espero",
+      "deseo",
+      "mi sueño",
+      "aspiro",
+      "pretendo",
+      "busco",
+      "mi propósito"
+    ],
+    "tiempo_retencion": "medio_plazo",
+    "ejemplos": [
+      "Quiero aprender japonés",
+      "Mi meta es correr un maratón",
+      "Planeo viajar a Europa el próximo año"
+    ],
+    "importancia_base": 0.7
+  },
+  
+  "emocion_estado": {
+    "prioridad": 5,
+    "descripcion": "Estados emocionales significativos",
+    "patrones": [
+      "me siento",
+      "estoy",
+      "me encuentro",
+      "me pone",
+      "me hace sentir",
+      "estoy pasando por",
+      "atravieso"
+    ],
+    "tiempo_retencion": "corto_plazo",
+    "ejemplos": [
+      "Me siento muy estresado",
+      "Estoy muy feliz hoy",
+      "Estoy pasando por un momento difícil"
+    ],
+    "importancia_base": 0.5
+  },
+  
+  "finanzas": {
+    "prioridad": 8,
+    "descripcion": "Información financiera importante",
+    "patrones": [
+      "mi banco",
+      "mi cuenta",
+      "mi tarjeta",
+      "mi inversión",
+      "mis ahorros",
+      "mi préstamo",
+      "mi hipoteca",
+      "mi deuda",
+      "mi presupuesto",
+      "gano",
+      "mi sueldo",
+      "mi salario"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Mi banco es Santander",
+      "Tengo una hipoteca de 20 años",
+      "Estoy ahorrando para un auto"
+    ],
+    "importancia_base": 0.85
+  },
+  
+  "educacion_formal": {
+    "prioridad": 8,
+    "descripcion": "Educación formal completada",
+    "patrones": [
+      "estudié",
+      "me gradué de",
+      "soy licenciado",
+      "soy ingeniero",
+      "soy doctor",
+      "tengo maestría",
+      "tengo doctorado",
+      "hice mi bachillerato",
+      "estudié en"
+    ],
+    "tiempo_retencion": "permanente",
+    "ejemplos": [
+      "Estudié ingeniería en sistemas",
+      "Tengo una maestría en IA",
+      "Me gradué de la Universidad Nacional"
+    ],
+    "importancia_base": 0.85
+  },
+  
+  "vehiculo": {
+    "prioridad": 7,
+    "descripcion": "Información sobre vehículos del usuario",
+    "patrones": [
+      "mi carro",
+      "mi auto",
+      "mi coche",
+      "mi moto",
+      "mi vehículo",
+      "mi bicicleta",
+      "tengo un carro",
+      "compré un auto",
+      "mi placa"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Tengo un Toyota Corolla 2020",
+      "Mi moto es una Yamaha",
+      "Compré un auto eléctrico"
+    ],
+    "importancia_base": 0.75
+  },
+  
+  "dieta_alimentacion": {
+    "prioridad": 7,
+    "descripcion": "Restricciones dietéticas y alimentación",
+    "patrones": [
+      "no como",
+      "soy vegetariano",
+      "soy vegano",
+      "no puedo comer",
+      "evito",
+      "mi dieta",
+      "estoy a dieta",
+      "ayuno",
+      "soy celíaco",
+      "lactosa",
+      "gluten"
+    ],
+    "tiempo_retencion": "largo_plazo",
+    "ejemplos": [
+      "Soy vegetariano desde hace 5 años",
+      "No como gluten",
+      "Estoy en dieta keto"
+    ],
+    "importancia_base": 0.8
+  },
+  
+  "pasatiempo": {
+    "prioridad": 6,
+    "descripcion": "Hobbies y pasatiempos",
+    "patrones": [
+      "mi hobby",
+      "mi pasatiempo",
+      "me dedico a",
+      "practico",
+      "juego",
+      "colecciono",
+      "en mi tiempo libre"
+    ],
+    "tiempo_retencion": "medio_plazo",
+    "ejemplos": [
+      "Mi hobby es la fotografía",
+      "Practico yoga",
+      "Colecciono monedas antiguas"
+    ],
+    "importancia_base": 0.65
+  }
+}

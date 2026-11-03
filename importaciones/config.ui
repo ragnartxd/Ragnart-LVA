@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>517</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Configuración del Asistente</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1E1E1E;
+    color: #00FFCC;
+    font-size: 14px;
+}
+QPushButton {
+    background-color: #333;
+    border: 2px solid #00FFCC;
+    border-radius: 10px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #00FFCC;
+    color: #000;
+}
+QTabWidget::pane {
+    border: 2px solid #00FFCC;
+    background: #222;
+    QTabWidget QWidget QPushButton {
+    background-color: #333;
+    }
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>680</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tabGeneral">
+     <attribute name="title">
+      <string>General</string>
+     </attribute>
+     <widget class="QGroupBox" name="NombredelAsistente">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>300</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Nombre del asistente</string>
+      </property>
+      <widget class="QLineEdit" name="TextnombreAsistente">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="NombredelUsuario">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>20</y>
+        <width>300</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Nombre del usuario</string>
+      </property>
+      <widget class="QLineEdit" name="TextNombreUsuario1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TextNombreUsuario2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TextNombreUsuario3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="IdiomaAsistente">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>300</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Idioma del asistente</string>
+      </property>
+      <widget class="QComboBox" name="BoxEleccionIdioma">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Español</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ingles</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Japones</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Frances</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Italiano</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Aleman</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="info">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>631</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Comando de activación e informacion de uso.</string>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>251</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Todo lo que puedas pensar bro</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabIntegraciones">
+     <attribute name="title">
+      <string>Integraciones</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupApi">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>API</string>
+      </property>
+      <widget class="QComboBox" name="BoxApi">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Clima</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Noticias</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wikipedia</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Spotify</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Imagen</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupClave">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Clave</string>
+      </property>
+      <widget class="QLineEdit" name="textClave">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="grupoIntegracion">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>631</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Añadir API</string>
+      </property>
+      <widget class="QScrollArea" name="scrollAreaText">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>601</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>599</width>
+          <height>229</height>
+         </rect>
+        </property>
+        <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>601</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <property name="plainText">
+          <string>#Añadir api personalizable
+
+def {nombre_api}({parametros}):
+</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnAgregarApi">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Agregar API</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCambiarClave">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>50</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cambiar clave</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnEliminarApi">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>90</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eliminar API</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabPersonalizacion">
+     <attribute name="title">
+      <string>Personalización</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBoxApariencia">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>300</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Apariencia del Asistente</string>
+      </property>
+      <widget class="QCheckBox" name="checkBoxAnimaciones">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Habilitar Animaciones</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditFilePersonaje">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>181</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modelo de diseño personaje</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Voz de la IA</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditFileVozIA">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nivel de audio</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSliderAudio">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>240</y>
+         <width>160</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSliderAnimacion">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>270</y>
+         <width>160</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nivel animación</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>300</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocidad voz</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSliderVoz">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>300</y>
+         <width>160</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Personalidad</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditPersonalidad">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxFuncionalidades">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>341</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Funcionalidades</string>
+      </property>
+      <widget class="QCheckBox" name="checkBoxAnimacionesSiempreActivo">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Siempre activo</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxAnimacionesAprendizaje">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>141</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Habilitar Aprendizaje</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxAnimacionesTareasUrgentes">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>171</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Priorizar tareas urgentes</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxAnimacionesInicaralejecutar">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>50</y>
+         <width>171</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Iniciar al ejecutar</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxSaveFile">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>110</y>
+        <width>341</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>¿Donde guardar tus datos?</string>
+      </property>
+      <widget class="QLineEdit" name="lineEditSaveFile">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxContactos">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>190</y>
+        <width>341</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>¿Contactos?</string>
+      </property>
+      <widget class="QLineEdit" name="lineEditSaveFile_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>30</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditSaveFile_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gmail</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabRespuestas">
+     <attribute name="title">
+      <string>Respuestas</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBoxContexto">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>641</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Manejo de Contexto</string>
+      </property>
+      <widget class="QCheckBox" name="checkBoxContexto">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>241</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Recordar contexto de conversación</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxHistorial">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>231</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Eliminar historial de uso</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>191</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Recordar conversacion hasta:</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxCantidadConversacion">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>20</y>
+         <width>42</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxContexto_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>300</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Actualizacion de IA</string>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>281</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:14px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8.25pt;&quot;&gt;Utilice esta funcion solo si cuenta con una grafica dedicada, de lo contrario puede generar retraso en su computadora y fallos en la matrix. Esta actualizacion ayudara a la IA a conocer sobre sus habitos y asi proporcionar mejores respuestas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxActualizarMes">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>161</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Actualizar IA cada mes</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabAvanzado">
+     <attribute name="title">
+      <string>Avanzado</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBoxRecursos">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>300</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Uso de Recursos</string>
+      </property>
+      <widget class="QSlider" name="sliderCPU">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>280</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnGuardar">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>440</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRestablecer">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>440</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Restablecer</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

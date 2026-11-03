@@ -1,0 +1,682 @@
+{
+  "abrir_aplicacion": {
+    "synonyms": ["abrir", "abre", "abra", "abras", "inicia", "ejecuta", "lanza", "arranca", "carga", "abrí", "abre la", "abre el", "inicia el", "inicia la", "ejecuta el", "ejecuta la", "lanza el", "lanza la"],
+    "ejemplos": [
+      "abre chrome",
+      "abre el navegador",
+      "inicia spotify",
+      "ejecuta el bloc de notas",
+      "lanza discord",
+      "arranca el explorador de archivos",
+      "pon youtube",
+      "puedes abrir photoshop",
+      "necesito que abras el word",
+      "abre la calculadora por favor",
+      "inicia el reproductor de música",
+      "abre netflix en el navegador",
+      "quiero que abras telegram",
+      "ejecuta el administrador de tareas",
+      "pon a correr"
+    ],
+    "params": {
+      "nombre_app": {"keyword": null}
+    }
+  },
+  "abrir_configuracion": {
+    "synonyms": [
+      "abrir configuración",
+      "abrir el panel de configuración",
+      "abre configuración",
+      "abre el panel de configuración",
+      "muéstrame la configuración",
+      "muéstrame el panel de configuración",
+      "abre el frontend de configuración"
+    ],
+    "ejemplos": [
+      "abre el panel de configuración",
+      "quiero abrir la configuración",
+      "muéstrame el panel de configuración",
+      "abre el frontend de configuración"
+    ],
+    "params": {}
+  },
+  "activar_bluetooth": {
+    "synonyms": ["activar bluetooth", "enciende bluetooth", "prende bluetooth", "habilitar bluetooth", "desactivar bluetooth", "apaga bluetooth", "activa el bluetooth", "desactiva el bluetooth", "apaga el bluetooth"],
+    "ejemplos": [
+      "activa el bluetooth",
+      "enciende el bluetooth",
+      "habilita bluetooth",
+      "prende el bluetooth",
+      "desactiva el bluetooth",
+      "apaga el bluetooth",
+      "quiero encender el bluetooth",
+      "necesito el bluetooth activo",
+      "conectar por bluetooth",
+      "deshabilita el bluetooth"
+    ],
+    "params": {
+      "estado": {"keyword": null}
+    }
+  },
+  "activar_wifi": {
+    "synonyms": ["activar wifi", "enciende wifi", "prende wifi", "habilitar wifi", "activa el wifi", "conectar wifi", "conectarme al wifi"],
+    "ejemplos": [
+      "activa el wifi",
+      "enciende el wifi",
+      "habilita el wifi",
+      "prende el wifi",
+      "quiero conectarme al wifi",
+      "necesito internet",
+      "conecta el wifi",
+      "activa la red inalámbrica"
+    ],
+    "params": {}
+  },
+  "ajustar_brillo": {
+    "synonyms": ["pon brillo", "poner el brillo", "ilumina pantalla", "aumentar brillo", "disminuir brillo", "baja brillo", "sube brillo", "ajusta el brillo", "cambia el brillo", "pon la pantalla", "baja la pantalla", "sube la pantalla"],
+    "ejemplos": [
+      "sube el brillo",
+      "baja el brillo de la pantalla",
+      "pon el brillo al 50",
+      "aumenta el brillo",
+      "disminuye el brillo",
+      "la pantalla está muy oscura, súbela",
+      "la pantalla está muy brillante, bájala",
+      "ajusta el brillo a 30",
+      "pon la pantalla más iluminada",
+      "reduce la luminosidad",
+      "ilumina más la pantalla",
+      "pon el brillo a máximo",
+      "me esta quemando la vista",
+      "no veo bien la pantalla",
+      "me encandila la pantalla",
+      "no distingo nada"
+    ],
+    "params": {
+      "nuevo_valor": {"keyword": "a"}
+    }
+  },
+  "alternar_aplicacion": {
+    "synonyms": ["alternar", "cambiar ventana", "alternar ventana", "cambiar de aplicación", "cambiar a", "ir a", "pasa a"],
+    "ejemplos": [
+      "cambia a chrome",
+      "alterna a discord",
+      "muéstrame el word",
+      "pasa a la ventana de spotify",
+      "ir a firefox",
+      "quiero ver el explorador de archivos",
+      "trae el bloc de notas al frente",
+      "cambia de aplicación",
+      "switch a visual studio"
+    ],
+    "params": {
+      "nombre_app": {"keyword": null}
+    }
+  },
+  "apagar_sistema": {
+    "synonyms": ["apagar sistema", "apaga el equipo", "shutdown", "apaga computadora", "apaga el pc", "apaga la pc", "apagar el computador", "apaga el computador"],
+    "ejemplos": [
+      "apaga el pc",
+      "apaga la computadora",
+      "apagar el sistema",
+      "quiero apagar el equipo",
+      "shutdown",
+      "apaga todo y cierra",
+      "cierra y apaga el computador",
+      "apaga la máquina"
+    ],
+    "params": {}
+  },
+  "arrastrar_y_soltar": {
+    "synonyms": ["arrastra", "arrastra y suelta", "transporta", "desliza y coloca", "mueve a", "arrastra el", "arrastra la"],
+    "ejemplos": [
+      "arrastra el archivo a la carpeta",
+      "mueve el documento a descargas",
+      "arrastra y suelta en la papelera",
+      "transporta ese archivo ahí",
+      "desliza y coloca en la carpeta",
+      "mueve esto a esa ubicación"
+    ],
+    "params": {
+      "texto_origen": {"keyword": null},
+      "texto_destino": {"keyword": "a"}
+    }
+  },
+  "bloquear_sistema": {
+    "synonyms": ["bloquear sistema", "lock workstation", "bloquea el equipo", "bloquea computadora", "bloquea el pc", "bloquea la pantalla", "bloquear pantalla"],
+    "ejemplos": [
+      "bloquea el pc",
+      "bloquea la pantalla",
+      "bloquear el sistema",
+      "pon la pantalla en bloqueo",
+      "lock the screen",
+      "cierra la sesión temporalmente",
+      "bloquea el equipo"
+    ],
+    "params": {}
+  },
+  "bajar_volumen": {
+    "synonyms": ["baja volumen", "reduce el volumen", "disminuye volumen", "volumen abajo", "bajar volumen", "baja el volumen", "menos volumen", "baja el sonido", "reduce el sonido", "quítale volumen"],
+    "ejemplos": [
+      "baja el volumen",
+      "reduce el volumen",
+      "menos volumen por favor",
+      "está muy alto bájalo",
+      "disminuye el sonido",
+      "baja el audio",
+      "no se escucha tan alto",
+      "el volumen está muy alto",
+      "bájale al volumen",
+      "me revientan los oidos",
+      "esto suena muy fuerte",
+      "esta muy ruidoso",
+      "haz que suene más bajo", 
+      "quítale volumen"
+    ],
+    "params": {}
+  },
+  "buscar_cancion": {
+    "synonyms": ["canción", "busca canción", "encuentra canción", "busca música", "encuentra música", "pon música", "pon la canción", "reproduce"],
+    "ejemplos": [
+      "busca la canción bohemian rhapsody",
+      "pon música de bad bunny",
+      "reproduce despacito",
+      "ponme algo de reggaeton",
+      "busca música relajante",
+      "encuentra canciones de shakira",
+      "quiero escuchar música",
+      "pon una canción de rock",
+      "busca esa canción que sonaba antes",
+      "ponme música para trabajar"
+    ],
+    "params": {
+      "cancion": {"keyword": null}
+    }
+  },
+  "cerrar_aplicacion": {
+    "synonyms": ["cerrar", "cierra", "terminar", "apagar aplicación", "detener", "salir de", "finalizar", "matar", "cerrar ventana", "cierra el", "cierra la", "termina el", "termina la", "apaga"],
+    "ejemplos": [
+      "cierra chrome",
+      "cierra esa ventana",
+      "termina spotify",
+      "cierra el bloc de notas",
+      "sal de discord",
+      "apaga el word",
+      "finaliza esa aplicación",
+      "cierra todo",
+      "quiero cerrar el navegador",
+      "mata ese proceso",
+      "cierra la ventana de firefox"
+    ],
+    "params": {
+      "nombre_app": {"keyword": null}
+    }
+  },
+  "clic_texto": {
+    "synonyms": ["clic", "haz clic", "presiona", "selecciona", "toca", "pulsa", "click", "haz click", "dale clic", "dale click"],
+    "ejemplos": [
+      "haz clic en aceptar",
+      "presiona el botón guardar",
+      "selecciona cancelar",
+      "dale clic a siguiente",
+      "toca el botón de inicio",
+      "pulsa en aceptar",
+      "click en el menú",
+      "presiona enter",
+      "haz clic en el botón rojo"
+    ],
+    "params": {
+      "texto": {"keyword": null}
+    }
+  },
+  "consultar_clima": {
+    "synonyms": ["clima", "qué tiempo hace", "pronóstico", "tiempo en", "va a llover", "cómo está el tiempo", "temperatura en", "el clima en", "como está el clima"],
+    "ejemplos": [
+      "qué tiempo hace hoy",
+      "cómo está el clima en bogotá",
+      "va a llover mañana",
+      "pronóstico del tiempo",
+      "cuál es la temperatura afuera",
+      "necesito saber el clima",
+      "cómo está el tiempo en medellín",
+      "va a hacer frío hoy",
+      "dime el clima para esta semana",
+      "está lloviendo en barranquilla"
+    ],
+    "params": {
+      "ciudad": {"keyword": null}
+    }
+  },
+  "consultar_noticias": {
+    "synonyms": ["noticias", "últimas noticias", "información actual", "novedades", "actualidad", "qué hay de nuevo", "qué pasó hoy", "muestrame titulares"],
+    "ejemplos": [
+      "dime las noticias de hoy",
+      "qué está pasando en el mundo",
+      "últimas noticias",
+      "qué hay de nuevo",
+      "información actual sobre política",
+      "novedades del día",
+      "cuéntame qué pasó hoy",
+      "noticias recientes",
+      "qué está ocurriendo"
+    ],
+    "params": {}
+  },
+  "consultar_wikipedia": {
+    "synonyms": ["wikipedia", "busca en wikipedia", "consulta wikipedia", "qué dice wikipedia", "búscame en wikipedia", "busca información sobre", "qué es", "quién es", "cuéntame sobre"],
+    "ejemplos": [
+      "busca en wikipedia qué es la fotosíntesis",
+      "quién fue simón bolívar",
+      "qué es la inteligencia artificial según wikipedia",
+      "búscame información sobre los agujeros negros",
+      "consulta wikipedia sobre la segunda guerra mundial",
+      "cuéntame sobre el sistema solar",
+      "qué dice wikipedia sobre colombia",
+      "busca información de einstein",
+      "dime qué es el cambio climático"
+    ],
+    "params": {
+      "query": {"keyword": null}
+    }
+  },
+  "doble_clic_texto": {
+    "synonyms": ["doble clic", "haz doble clic", "presiona dos veces", "toca dos veces", "clic dos veces", "doble click", "haz doble click"],
+    "ejemplos": [
+      "haz doble clic en el archivo",
+      "doble clic en esa carpeta",
+      "presiona dos veces en aceptar",
+      "toca dos veces el ícono",
+      "doble click en el ejecutable",
+      "abre con doble clic"
+    ],
+    "params": {
+      "texto": {"keyword": null}
+    }
+  },
+  "enviar_correo": {
+    "synonyms": ["correo", "email", "enviar correo", "mandar email", "remitir mensaje", "correo electrónico", "manda un correo", "envía un email", "escríbele un correo", "redacta un email"],
+    "ejemplos": [
+      "envía un correo a juan",
+      "mándale un email a mi jefe",
+      "escríbele un correo a pedro sobre la reunión",
+      "enviar email a soporte",
+      "mandar correo electrónico a recursos humanos",
+      "remite el mensaje a gerencia",
+      "quiero enviar un correo",
+      "escribe un email a ana diciendo que no puedo ir",
+      "redacta un email para mi profesor"
+    ],
+    "params": {
+      "destinatario": {"keyword": "a"},
+      "asunto": {"keyword": "asunto"},
+      "cuerpo": {"keyword": "cuerpo"}
+    }
+  },
+  "enviar_whatsapp": {
+    "synonyms": ["whatsapp", "enviar mensaje por whatsapp", "mandar mensaje por whatsapp", "mensaje por whatsapp", "mandar whats", "envía un whatsapp", "manda un whatsapp", "escríbele por whatsapp", "manda mensaje"],
+    "ejemplos": [
+      "mándale un whatsapp a carlos",
+      "envía mensaje por whatsapp a mamá",
+      "escríbele por whatsapp a juan diciendo que ya voy",
+      "mandar whats a pedro",
+      "envía un whatsapp a mi hermano",
+      "manda un mensaje de whatsapp a sofia",
+      "dile por whatsapp que no puedo"
+    ],
+    "params": {
+      "usuario": {"keyword": "a"},
+      "mensaje": {"keyword": "diciendo"}
+    }
+  },
+  "escribir_word": {
+    "synonyms": ["escribir", "escribe", "escribeme", "redacta un documento", "redactar un documento", "documenta", "escribe tal cual", "anota", "registra", "transcribe", "escribí", "escríbeme", "redáctame", "anótame"],
+    "ejemplos": [
+      "escribe esto en word",
+      "redacta un documento sobre ventas",
+      "anota lo siguiente",
+      "transcribe lo que te voy a dictar",
+      "escríbeme una carta formal",
+      "redáctame un informe",
+      "documenta estos puntos",
+      "registra esta información",
+      "quiero que escribas esto",
+      "escribe tal cual lo que digo",
+      "anótame estas ideas"
+    ],
+    "params": {
+      "texto_completo": {"keyword": null}
+    }
+  },
+  "generar_imagen": {
+    "synonyms": ["imagen", "generar imagen", "crear imagen", "dibujar imagen", "hazme una imagen", "crea una imagen", "genera una foto", "dibuja", "hazme un dibujo"],
+    "ejemplos": [
+      "genera una imagen de un gato",
+      "crea una foto de una ciudad futurista",
+      "dibuja un paisaje de montañas",
+      "hazme una imagen de un dragón",
+      "quiero una imagen de playa al atardecer",
+      "genera un dibujo de un robot",
+      "crea una ilustración de un bosque",
+      "hazme una imagen artística"
+    ],
+    "params": {
+      "texto": {"keyword": null}
+    }
+  },
+  "hacer_scroll": {
+    "synonyms": ["scroll", "desplaza", "mueve pantalla", "mueve vista", "desliza la pantalla", "baja la página", "sube la página", "desplaza hacia abajo", "desplaza hacia arriba"],
+    "ejemplos": [
+      "baja la página",
+      "sube la página",
+      "haz scroll hacia abajo",
+      "desplaza la vista hacia arriba",
+      "mueve la pantalla para abajo",
+      "scroll down",
+      "scroll up",
+      "desliza hacia abajo",
+      "baja en la página web",
+      "sube un poco la vista"
+    ],
+    "params": {
+      "texto": {"keyword": null},
+      "cantidad": {"keyword": "cantidad"}
+    }
+  },
+  "hora_actual": {
+    "synonyms": ["qué hora es", "dime la hora", "qué hora tenemos", "hora por favor", "qué hora marca", "qué hora", "hora actual", "me dices la hora"],
+    "ejemplos": [
+      "qué hora es",
+      "dime la hora",
+      "qué hora tenemos",
+      "me dices la hora por favor",
+      "qué hora marca el reloj",
+      "hora actual",
+      "a qué hora estamos",
+      "cuánto marca el reloj"
+    ],
+    "params": {
+      "formato_24h": {"keyword": "en"}
+    }
+  },
+  "identificar_anime": {
+    "synonyms": ["anime", "reconocer anime", "identificar anime", "qué anime es", "dime anime", "de qué anime es", "a qué anime pertenece"],
+    "ejemplos": [
+      "de qué anime es este personaje",
+      "identifica este anime",
+      "qué anime es este",
+      "reconoce el anime de esta imagen",
+      "a qué anime pertenece esto",
+      "dime el nombre de este anime"
+    ],
+    "params": {}
+  },
+  "maximizar_aplicacion": {
+    "synonyms": ["maximizar", "abrir en grande", "maximiza", "pantalla completa", "hacer grande", "expandir", "ampliar", "agrandar", "pon en pantalla completa", "agranda la ventana", "pon en grande"],
+    "ejemplos": [
+      "maximiza chrome",
+      "pon el word en pantalla completa",
+      "agranda la ventana de spotify",
+      "expande el navegador",
+      "maximiza esa ventana",
+      "quiero ver chrome en grande",
+      "amplía la ventana",
+      "pon chrome a pantalla completa"
+    ],
+    "params": {
+      "nombre_app": {"keyword": null}
+    }
+  },
+  "minimizar_aplicacion": {
+    "synonyms": ["minimizar", "ocultar ventana", "hacer pequeña", "reducir", "plegar", "encoger", "mandar a segundo plano", "minimiza", "oculta la ventana", "manda al fondo"],
+    "ejemplos": [
+      "minimiza chrome",
+      "oculta la ventana del word",
+      "manda discord a segundo plano",
+      "minimiza esa ventana",
+      "reduce la ventana",
+      "quiero ocultar el navegador",
+      "manda al fondo el spotify",
+      "esconde esa ventana"
+    ],
+    "params": {
+      "nombre_app": {"keyword": null}
+    }
+  },
+  "poner_alarma": {
+    "synonyms": ["alarma", "despertar", "recordatorio", "aviso", "alarma para", "despiértame", "hazme recordar", "ponme una alarma", "crea un recordatorio", "recuérdame"],
+    "ejemplos": [
+      "ponme una alarma a las 7",
+      "despiértame a las 6 de la mañana",
+      "crea un recordatorio para las 3 pm",
+      "hazme recordar a las 8",
+      "pon una alarma para las 10",
+      "recuérdame a las 5 de la tarde",
+      "avísame a las 9 am",
+      "quiero una alarma para mañana a las 7",
+      "crea un alarma a las 10",
+      "crea 1 alarma a las 10"
+    ],
+    "params": {
+      "hora_texto": {"keyword": "a"}
+    }
+  },
+  "poner_cronometro": {
+    "synonyms": ["cronómetro", "cronometrar", "mide el tiempo", "temporizador", "contador", "controlar el tiempo", "pon un temporizador", "inicia el cronómetro", "cuenta regresiva", "inicia cronometro", "inicia un cronometro", "inicia el cronometro"],
+    "ejemplos": [
+      "pon un temporizador de 5 minutos",
+      "inicia el cronómetro",
+      "cuenta regresiva de 30 segundos",
+      "mide el tiempo por favor",
+      "pon un cronómetro de 10 minutos",
+      "activa el temporizador",
+      "quiero un contador de 2 minutos",
+      "cronometra esto"
+    ],
+    "params": {
+      "segundos": {"keyword": "por"}
+    }
+  },
+  "reiniciar_sistema": {
+    "synonyms": ["reiniciar sistema", "reinicia el equipo", "restart", "reinicia computadora", "reinicia el pc", "reinicia la pc", "reiniciar el computador"],
+    "ejemplos": [
+      "reinicia el pc",
+      "reiniciar el sistema",
+      "restart the computer",
+      "reinicia el equipo",
+      "quiero reiniciar la computadora",
+      "reinicia la máquina",
+      "necesito reiniciar"
+    ],
+    "params": {}
+  },
+  "subir_volumen": {
+    "synonyms": ["sube volumen", "aumenta el volumen", "eleva volumen", "volumen arriba", "subir volumen", "sube el volumen", "más volumen", "sube el sonido", "aumenta el sonido"],
+    "ejemplos": [
+      "haz que suene más fuerte",
+      "sube el volumen",
+      "aumenta el volumen",
+      "más volumen por favor",
+      "está muy bajo súbelo",
+      "eleva el sonido",
+      "sube el audio",
+      "no se escucha bien",
+      "el volumen está muy bajo",
+      "súbele al volumen",
+      "no escucho nada",
+      "no oigo nada", 
+      "apenas se escucha"
+    ],
+    "params": {}
+  },
+  "suspender_sistema": {
+    "synonyms": ["suspender sistema", "poner en suspensión", "hibernar", "suspende el equipo", "suspender el pc", "modo suspensión", "poner a dormir"],
+    "ejemplos": [
+      "suspende el pc",
+      "pon el equipo en suspensión",
+      "hibernar el sistema",
+      "modo suspensión",
+      "pon a dormir el computador",
+      "suspender el equipo por ahora"
+    ],
+    "params": {}
+  },
+  "tomar_captura": {
+    "synonyms": ["toma captura", "pantallazo", "tomar captura", "screenshot", "captura de pantalla", "saca un pantallazo", "captura la pantalla"],
+    "ejemplos": [
+      "toma una captura de pantalla",
+      "saca un pantallazo",
+      "screenshot",
+      "captura la pantalla",
+      "quiero un pantallazo de esto",
+      "guarda lo que hay en pantalla",
+      "tomar captura ahora"
+    ],
+    "params": {}
+  },
+  "ejecutar_comando": {
+    "synonyms": ["repite la accion", "graba el comando", "repite lo anterior", "vuelve a hacer", "ejecuta de nuevo"],
+    "ejemplos": [
+      "repite la acción anterior",
+      "graba ese comando",
+      "vuelve a hacer lo mismo",
+      "ejecuta de nuevo",
+      "repite eso que hiciste"
+    ],
+    "params": {
+      "comando_voz": {"keyword": "texto"}
+    }
+  },
+  "flujo_analizar_archivo": {
+    "synonyms": ["analiza este archivo", "reconocer archivo", "identificar archivo", "qué es este archivo", "analiza el archivo", "revisa este archivo", "qué contiene este archivo"],
+    "ejemplos": [
+      "analiza este archivo",
+      "qué contiene este documento",
+      "identifica qué tipo de archivo es este",
+      "revisa el archivo que te paso",
+      "qué es este archivo",
+      "analiza y dime qué hay aquí",
+      "reconoce el contenido de este archivo"
+    ],
+    "params": {
+      "texto": {"keyword": null}
+    }
+  },
+  "te_quiero_modificar": {
+    "synonyms": ["te quiero modificar", "quiero modificarte", "quiero cambiarte", "quiero configurarte", "quiero ajustarte", "quiero personalizarte"],
+    "ejemplos": [
+      "te quiero modificar",
+      "quiero cambiar tu comportamiento",
+      "quiero configurarte",
+      "quiero ajustar cómo funcionas",
+      "quiero personalizarte",
+      "quiero modificar tus ajustes"
+    ],
+    "params": {}
+  },
+  "registrar_rostro": {
+    "synonyms": ["registrar rostro", "capturar rostro", "reconocer rostro", "registra mi cara", "guarda mi rostro", "aprende mi cara"],
+    "ejemplos": [
+      "registra mi rostro",
+      "captura mi cara",
+      "guarda mi cara en el sistema",
+      "aprende a reconocerme",
+      "registra esta cara",
+      "quiero que me reconozcas"
+    ],
+    "params": {}
+  },
+  "verificar_rostro": {
+    "synonyms": ["verificar rostro", "comprobar rostro", "identificar rostro", "verifica mi cara", "quién soy", "reconóceme"],
+    "ejemplos": [
+      "verifica mi rostro",
+      "identifícame",
+      "comprueba quién soy",
+      "reconóceme por la cámara",
+      "verificar identidad por cara",
+      "quién soy según la cámara"
+    ],
+    "params": {}
+  },
+  "cifrar_archivo": {
+    "synonyms": ["cifrar archivo", "encriptar archivo", "proteger archivo", "cifra el archivo", "encripta esto", "protege este archivo"],
+    "ejemplos": [
+      "cifra este archivo",
+      "encripta el documento",
+      "protege este archivo con contraseña",
+      "quiero encriptar esto",
+      "asegura este archivo",
+      "cifrar el documento para protegerlo",
+      "cifrar carpeta",
+      "cifra esta carpeta"
+    ],
+    "params": {}
+  },
+  "descifrar_archivo": {
+    "synonyms": ["descifrar archivo","descifra el documento", "decriptar archivo", "quitar proteccion archivo", "descifra el archivo", "desencripta esto", "quita la protección"],
+    "ejemplos": [
+      "descifra este archivo",
+      "desencripta el documento",
+      "quita la protección del archivo",
+      "quiero descifrar esto",
+      "abre el archivo cifrado",
+      "descifrar el documento protegido",
+      "descifrar el documento",
+      "descifra esta carpeta",
+      "descifra la carpeta protegida"
+    ],
+    "params": {}
+  },
+
+  "marcar_calendario_evento": {
+    "synonyms": ["agendar evento", "marcar evento en calendario", "anotar evento en calendario"],
+    "ejemplos": ["agendar un evento en el calendario", "anota un evento para mi"],
+    "params": {}
+  },
+  "mover_evento_calendario": {
+    "synonyms": ["mover evento del calendario", "cambiar evento de fecha", "reprogramar evento"],
+    "ejemplos": ["mueve un evento del calendario", "reprograma una cita"],
+    "params": {}
+  },
+  "eliminar_evento_calendario": {
+    "synonyms": ["eliminar evento del calendario", "borrar evento del calendario"],
+    "ejemplos": ["elimina un evento del calendario", "borra una cita del calendario"],
+    "params": {}
+  },
+  "convertir_pdf_para_ollama": {
+    "synonyms": ["resumir un pdf", "analizar pdf con la ia", "convertir pdf para ollama"],
+    "ejemplos": ["resume un archivo pdf", "analiza este pdf con el modelo local"],
+    "params": {}
+  },
+  "conversacion": {
+    "synonyms": [],
+    "ejemplos": [
+        "qué piensas sobre esto",
+        "cuéntame un chiste",
+        "hola cómo estás",
+        "qué opinas sobre la inteligencia artificial",
+        "háblame de cualquier cosa",
+        "me puedes explicar cómo funciona algo",
+        "cuáles son las diferencias entre dos cosas",
+        "qué me recomiendas",
+        "tengo una pregunta general",
+        "simplemente quiero conversar",
+        "se me está pasando la hora",
+        "el tiempo vuela cuando uno está ocupado",
+        "el volumen de trabajo está muy alto hoy",
+        "la pantalla de mi vida está oscura",
+        "qué diferencia hay entre subir y bajar algo",
+        "cual es la diferencia entre",
+        "qué me puedes decir sobre el tema del que estamos hablando",
+        "cuéntame algo interesante",
+        "dime algo curioso",
+        "me gustaría saber tu opinión sobre un tema",
+        "me aburro", 
+        "estoy cansado", 
+        "qué puedes hacer tú", 
+        "háblame de música",
+        "hablame de películas", 
+        "cual es tu nombre"
+    ],
+    "params": {}
+  }
+}

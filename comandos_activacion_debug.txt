@@ -1,0 +1,8 @@
+# Modo desarrollo completo con hot-reloading
+python DEBUG.py --hotreload
+
+# Solo backend con recarga automática
+python DEBUG.py --backend-only --hotreload
+
+# Con logs detallados
+python DEBUG.py --hotreload --debug

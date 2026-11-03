@@ -1,0 +1,17 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "holograma_men.moc3",
+		"Textures": [
+			"holograma_men.1024/texture_00.png"
+		],
+		"DisplayInfo": "holograma_men.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

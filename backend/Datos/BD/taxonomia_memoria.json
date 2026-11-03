@@ -1,0 +1,195 @@
+{
+  "identidad_personal": {
+    "patrones": [
+      "me llamo",
+      "mi nombre es",
+      "soy",
+      "tengo años",
+      "nací en",
+      "vivo en"
+    ],
+    "entidades_spacy": [
+      "PERSON",
+      "PER"
+    ],
+    "prioridad": 10,
+    "tiempo_retencion": "permanente",
+    "descripcion": "Información de identidad del usuario"
+  },
+  "familia": {
+    "patrones": [
+      "mi esposa",
+      "mi esposo",
+      "mi hijo",
+      "mi hija",
+      "mi padre",
+      "mi madre",
+      "mi hermano",
+      "mi hermana",
+      "mi pareja",
+      "mi novio",
+      "mi novia"
+    ],
+    "entidades_spacy": [
+      "PERSON"
+    ],
+    "prioridad": 9,
+    "tiempo_retencion": "permanente",
+    "descripcion": "Relaciones familiares"
+  },
+  "salud": {
+    "patrones": [
+      "soy alérgico",
+      "tengo alergia",
+      "padezco",
+      "enfermedad",
+      "medicamento",
+      "tengo diabetes",
+      "tengo hipertensión",
+      "no puedo comer"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 10,
+    "tiempo_retencion": "permanente",
+    "descripcion": "Información médica y de salud"
+  },
+  "trabajo_estudio": {
+    "patrones": [
+      "trabajo como",
+      "trabajo en",
+      "estudio",
+      "soy ingeniero",
+      "soy médico",
+      "soy profesor",
+      "mi empresa",
+      "mi jefe"
+    ],
+    "entidades_spacy": [
+      "ORG"
+    ],
+    "prioridad": 8,
+    "tiempo_retencion": "largo_plazo",
+    "descripcion": "Información laboral y académica"
+  },
+  "posesion": {
+    "patrones": [
+      "tengo un",
+      "tengo una",
+      "mi carro",
+      "mi auto",
+      "mi casa",
+      "mi apartamento",
+      "mi mascota"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 7,
+    "tiempo_retencion": "largo_plazo",
+    "descripcion": "Posesiones del usuario"
+  },
+  "preferencias": {
+    "patrones": [
+      "me gusta",
+      "me encanta",
+      "prefiero",
+      "adoro",
+      "me fascina",
+      "mi favorito",
+      "mi favorita"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 6,
+    "tiempo_retencion": "medio_plazo",
+    "descripcion": "Gustos y preferencias"
+  },
+  "evento_futuro": {
+    "patrones": [
+      "mañana tengo",
+      "próximo",
+      "la semana que viene",
+      "el mes que viene",
+      "debo ir",
+      "tengo cita",
+      "tengo reunión"
+    ],
+    "entidades_spacy": [
+      "DATE",
+      "TIME"
+    ],
+    "prioridad": 8,
+    "tiempo_retencion": "temporal",
+    "descripcion": "Eventos y compromisos futuros"
+  },
+  "ubicacion": {
+    "patrones": [
+      "vivo en",
+      "estoy en",
+      "me encuentro en",
+      "estoy ubicado en"
+    ],
+    "entidades_spacy": [
+      "GPE",
+      "LOC"
+    ],
+    "prioridad": 7,
+    "tiempo_retencion": "largo_plazo",
+    "descripcion": "Información de ubicación"
+  },
+  "contacto": {
+    "patrones": [
+      "mi correo es",
+      "mi email es",
+      "mi teléfono es",
+      "mi número es",
+      "llamame al"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 9,
+    "tiempo_retencion": "permanente",
+    "descripcion": "Información de contacto"
+  },
+  "pregunta": {
+    "patrones": [
+      "qué",
+      "cómo",
+      "cuándo",
+      "dónde",
+      "por qué",
+      "quién",
+      "cuál"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 1,
+    "tiempo_retencion": "efimero",
+    "descripcion": "Preguntas del usuario"
+  },
+  "conversacion_casual": {
+    "patrones": [
+      "hola",
+      "buenos días",
+      "buenas tardes",
+      "buenas noches",
+      "gracias",
+      "de nada",
+      "adiós",
+      "hasta luego"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 2,
+    "tiempo_retencion": "efimero",
+    "descripcion": "Conversación casual sin información crítica"
+  },
+  "instruccion": {
+    "patrones": [
+      "por favor",
+      "ayúdame",
+      "necesito que",
+      "quiero que",
+      "podrías",
+      "puedes"
+    ],
+    "entidades_spacy": [],
+    "prioridad": 3,
+    "tiempo_retencion": "efimero",
+    "descripcion": "Instrucciones y solicitudes"
+  }
+}
